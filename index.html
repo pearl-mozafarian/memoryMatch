@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato|Oswald|Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="dynamic_style.css" type="text/css" rel="stylesheet">
+    <script src="dynamic_js.js"></script>
+</head>
+<body>
+<div class="container-fluid" id="fullPage">
+    <div id="ball"></div>
+    <div id="harry"></div>
+    <div id="win"></div>
+    <nav class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+        <div id="logo" class="insideNav col-lg-4 col-md-4 col-sm-4 col-xs-4 reset">
+            <a href="#">reset</a></div>
+        <div class="about insideNav col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#" data-toggle="modal" data-target="#aboutModal">About</a></div>
+        <div  id="setting" class="insideNav col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="#" data-toggle="modal" data-target="#settingModal">setting</a></div>
+    </nav>
+    <div class="game_area">
+    </div>
+
+    <!-- About Modal -->
+    <div class="modal fade" id="aboutModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Harry Potter Memory Match Game</h4>
+                </div>
+                <div class="modal-body">
+                    <img id="pearl" src="images/mori.jpg">
+                    <p id="about_paragraph">My name is Pearl, and I am passionate about solving problems in code and visual design. I earned a bachelors degree in Computer Science foundations in C++ and took electives in web programming. I recently graduated from LearningFuze, an advanced web development boot camp where I learned and applied the skills I obtained in college in greater depth and learned much more. Currently I am getting my Master's degree in Computer Science from California State university of Fullerton on a part time basis while working.
+
+                        <p>My skills include HTML5, CSS3, Javascript, jQuery, AngularJS, PHP, MySQL and Firebase. I enjoy brainstorming and collaborating with a team and also enjoy working independently and am currently seeking new opportunities." </p>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-color" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- setting Modal -->
+    <div class="modal fade" id="settingModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Settings</h4>
+                </div>
+                <div class="modal-body">
+                    <audio controls>
+                        <source src="" type="audio" id="audio">
+                    </audio>
+                    <div id="warning" style="text-align: center">
+                        <h4><span class="glyphicon glyphicon-warning-sign"></span> You need wider screen to be able to play this game.</h4>
+                        <p >Thank you for visiting</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-color" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div> <!--full page-->
+</body>
+</html>

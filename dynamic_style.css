@@ -1,0 +1,305 @@
+#fullPage {
+    position: relative;
+    /*border: 3px solid black;*/
+    height: 100vh;
+    width: 100vw;
+    background: url("images/new background.png") no-repeat;
+    background-size: cover;
+    font-family: 'Oswald', sans-serif;
+}
+#win {
+    color: white;
+    position: absolute;
+    width: 50%;
+    top:30%;
+    left:30%;
+    height: 70%;
+    padding: 10%;
+    border-radius: 10px;
+    background: url("https://s3.amazonaws.com/uploads.hipchat.com/165467/3703899/IArWBNcTn8QZP76/win2%20copy.png") no-repeat;
+    background-size: contain;
+    transform: scale(0);
+    transition: 1s ease-in-out;
+}
+#ball {
+    z-index: 2;
+    position: fixed;
+    height: 7%;
+    width:8%;
+    top: 80%;
+    left: 2%;
+    background: url("images/ball.png") no-repeat;
+    background-size: contain;
+    transition: 1s ease-in-out;
+}
+#ball:hover {
+    transform: scale(1.2);
+}
+#harry {
+    z-index: 2;
+    position: fixed;
+    height: 23%;
+    width: 15%;
+    top:2%;
+    left:80%;
+    background: url("images/harry potter.png") no-repeat;
+    background-size: contain;
+    transition: 1s ease-in-out;
+}
+nav {
+    position: absolute;
+    height: 6%;
+    top: 2%;
+    left: 2%;
+}
+.insideNav {
+    position: relative;
+    height: 100%;
+}
+.insideNav:hover {
+    transform: scale(1.1);
+}
+#logo {
+    background: url("images/logo3.png") no-repeat;
+    background-size: contain;
+}
+.about {
+    background: url("images/about last.png") no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+#pearl{
+    width: 40%;
+    height: 40%;
+    padding: 2%;
+    border-radius: 50%;
+}
+#setting {
+    background: url("images/setting last.png") no-repeat;
+    background-size: contain;
+    height: 100%;
+}
+#warning {
+    display: none;
+}
+#aboutModal {
+    font-family: 'Roboto', sans-serif;
+}
+#logo a, .about a, #setting a {
+    position: absolute;
+    top: 100%;
+    height: 100%;
+}
+
+.insideNav a{
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+}
+.insideNav a:focus {
+outline: none;
+}
+/*modal*/
+.modal-content {
+    background-color:#E0E0E0 ;
+    color:	#202020 ;
+    font-family: 'Oswald', sans-serif;
+}
+.btn-color {
+    background-color:#606060 ;
+    color: #fff;
+}
+.game_area {
+    color: black;
+    position: absolute;
+    /*border: 2px solid black;*/
+    width: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    height: 70%;
+}
+.card  {
+    position: relative;
+    border-radius: 5px;
+    transition-duration: 1.25s;
+    transform-style: preserve-3d;
+    height: 25%;
+    /*box-shadow: 2px 2px 10px gray;*/
+}
+.front, .back {
+    position: absolute;
+    border-radius: 5px;
+    left:5%;
+    top: 5%;
+    height: 90%;
+    width: 90%;
+    box-shadow: 1px 1px 10px 1px black;
+}
+.front:hover  {
+    box-shadow: 1px 1px 10px 0px black;
+    transform: scale(1.1);
+}
+
+.front{
+    backface-visibility: hidden;
+    background: url("images/front.jpg") no-repeat;
+    background-size: cover;
+}
+.front1 {
+    background: url("images/front4.gif") no-repeat;
+    background-size: cover;
+}
+.back{
+    -moz-transform: rotate3D(0,1,0,180deg);
+    -webkit-transform: rotate3D(0,1,0,180deg);
+    transform: rotate3D(0,1,0,180deg);
+    backface-visibility: hidden;
+}
+#row4 {
+    padding: 3%;
+    margin-top: 1%;
+    position:relative ;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+    height: 15%;
+    border-radius: 10px;
+    /*border: 1px solid gray;*/
+    background-color: rgba(216,191,216,0.1);
+    color: black;
+}
+
+.flipcard{
+    -moz-transform: rotate3D(0,1,0,180deg);
+    -webkit-transform: rotate3D(0,1,0,180deg);
+    transform: rotate3D(0,1,0,180deg);
+}
+.back1 {
+    background: url("images/back1.jpg") no-repeat;
+    background-size: cover;
+}
+.back2 {
+    background: url("images/back2.jpg") no-repeat;
+    background-size: cover;
+}
+.back3 {
+    background: url("images/back30.jpg") no-repeat;
+    background-size: cover;
+}
+.back4 {
+    background: url("images/back4.jpg") no-repeat;
+    background-size: cover;
+}
+.back5 {
+    background: url("images/back5.jpg") no-repeat;
+    background-size: cover;
+}
+.back6 {
+    background: url("images/back6.jpg") no-repeat;
+    background-size: cover;
+}
+.back7 {
+    background: url("images/back7.jpg") no-repeat;
+    background-size: cover;
+}
+.back8 {
+    background: url("images/back8.jpg") no-repeat;
+    background-size: cover;
+}
+.back9 {
+    background: url("images/back10.jpg") no-repeat;
+    background-size: cover;
+}
+
+.herminy{
+    -webkit-animation: anim .5s infinite linear;
+    animation: anim .5s infinite linear;
+}
+@keyframes anim {
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+.ron {
+    background: url("images/love (1).gif") no-repeat;
+    background-size: cover;
+}
+@media only screen and (max-width:1030px){
+    .front1 {
+        background: url("images/front2.jpg") no-repeat;
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:778px) {
+    audio {
+        display: none;
+    }
+    #warning {
+        display: block;
+    }
+    .glyphicon-warning-sign {
+        line-height: 3em;
+        color: orangered;
+    }
+    #fullPage {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .game_area {
+        width: 95%;
+        height: 85%;
+        transform: translate(-50%, -35%);
+    }
+    #harry, #ball, .game_area {
+        display: none;
+    }
+    span {
+        color: white;
+    }
+    .game_played {
+        padding-left: 0;
+    }
+    .front, .back {
+        height: 60%;
+    }
+    #row4 {
+        position: fixed;
+        width: 100vw;
+        top : 70vh;
+        height: auto;
+    }
+    .front1 {
+        background: url("images/front2.jpg") no-repeat;
+        background-size: cover;
+    }
+    #pearl{
+        align-content: center;
+        width: 40vw;
+        height: 40vw;
+        padding: 2%;
+        border-radius: 50%;
+    }
+}
+@media only screen and (max-width:778px) and (orientation: landscape) {
+    .game-area {
+        display: none;
+    }
+    .front, .back {
+        height: 100%;
+    }
+    #row4 {
+        position: fixed;
+        width: 100vw;
+        top : 65vh;
+        height: auto;
+        padding: 2%;
+    }
+    #pearl{
+        align-content: center;
+        width: 30vh;
+        height: 30vh;
+        padding: 2%;
+        border-radius: 50%;
+    }
+}
